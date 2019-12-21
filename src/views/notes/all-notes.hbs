@@ -1,4 +1,5 @@
 <div class="row">
+
 	{{#each notes}}
 		<div class="col-md-3 mb-3">
 			<div class="card">
@@ -15,14 +16,15 @@
 			</div>
 		</div>
 	{{/each}}
+
 	<div class="col-md-3 mb-3">
 		<div class="card">
-			<div class="card-body">
+			<div class="card-body text-center">
 				<h4 class="card-title d-flex justify-content-between align-items-center lead">
-					Agrega una nueva nota
+					Agrega una nueva nota, {{user.name}}
 				</h4>
 				<hr>
-				<a href="/notes/add"><img src="/img/add.png" alt="Añadir nota" style="width: 100%;"></a>
+				<a href="/notes/add"><img src="/img/add.png" alt="Añadir nota" class="mx-auto plus-img" style="width: 100%;"></a>
 			</div>
 		</div>
 	</div>
